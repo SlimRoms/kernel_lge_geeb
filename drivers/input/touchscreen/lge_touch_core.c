@@ -200,7 +200,7 @@ int ghost_detect_solution(struct lge_touch_data *ts)
 
 	if(trigger_baseline==2) 
 		goto out_need_to_rebase;
-	
+
 	if(resume_flag) {
 		resume_flag = 0;
 		do_gettimeofday(&t_ex_debug[TIME_EX_FIRST_INT_TIME]);
@@ -3054,7 +3054,7 @@ static ssize_t store_debouncing_count(struct lge_touch_data *ts, const char *buf
 {
 	int ret = 0;
 	int debouncing_count = 0;
-	
+
 	ret = sscanf(buf, "%d",
 				&debouncing_count
 				);
@@ -3067,7 +3067,7 @@ static ssize_t store_debouncing_finger_num(struct lge_touch_data *ts, const char
 {
 	int ret = 0;
 	int debouncing_finger_num = 0;
-	
+
 	ret = sscanf(buf, "%d",
 				&debouncing_finger_num
 				);
@@ -3080,7 +3080,7 @@ static ssize_t store_ghost_detection_enable(struct lge_touch_data *ts, const cha
 {
 	int ret = 0;
 	int ghost_detection_enable = 0;
-	
+
 	ret = sscanf(buf, "%d",
 				&ghost_detection_enable
 				);
